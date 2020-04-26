@@ -10,6 +10,14 @@ const schema = new Schema(
       type: String,
       required: false,
     },
+    link: {
+      type: String,
+      required: false,
+    },
+    techs: {
+      type: [String],
+      required: false,
+    },
     tags: {
       type: [String],
       required: false,
@@ -21,4 +29,4 @@ const schema = new Schema(
   },
 );
 
-module.exports = model('Tool', schema);
+module.exports = model('Repositories', schema);

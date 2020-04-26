@@ -1,25 +1,25 @@
 // const _ = require('lodash');
 
-const tools = require('./tools/resolver');
+const repository = require('./repository/resolver');
 const author = require('./author/resolver');
 
 const query = {
   Query: {
-    ...tools.Query,
+    ...repository.Query,
     ...author.Query,
   },
 };
 
 const mutation = {
   Mutation: {
-    ...tools.Mutation,
+    ...repository.Mutation,
     ...author.Mutation,
   },
 };
 
 module.exports = {
   ...author,
-  ...tools,
+  ...repository,
   ...query,
   ...mutation,
 };

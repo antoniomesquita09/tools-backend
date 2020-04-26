@@ -1,7 +1,7 @@
-const tool = require('./tools/type');
+const repository = require('./repository/type');
 const author = require('./author/type');
 
 module.exports = [
-  tool,
+  repository,
   author,
 ];
