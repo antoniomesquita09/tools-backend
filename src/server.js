@@ -1,6 +1,6 @@
 const app = require('./app');
 
-app.listen({ port: process.env.port || 4000 }).then(({ url }) => {
+app.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
   console.log('\n\n\n ');
   console.log('██████  ██  ██████      ██████  ███████ ██      ██  ██████  ');
   console.log('██   ██ ██ ██           ██   ██ ██      ██      ██ ██    ██ ');
