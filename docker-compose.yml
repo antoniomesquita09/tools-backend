@@ -4,5 +4,8 @@ services:
     container_name: graphql
     restart: always
     build: .
+    command: yarn dev
     ports:
       - "4000:4000"
+    volumes:
+      - .:/usr/app

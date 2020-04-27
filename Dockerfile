@@ -1,13 +1,13 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR /usr/app
 
-COPY package.json /app
+COPY package.json /usr/app
 
 RUN yarn
 
-COPY . /app
+COPY . /usr/app
 
 EXPOSE 4000
 
-CMD yarn start
+CMD yarn dev

@@ -15,7 +15,6 @@ module.exports = {
       const newAuthor = await Author.findById(author);
       repo.author = newAuthor;
       await repo.save();
-
       return repo.populate('author');
     },
     updateRepository: async (_, input) => {
