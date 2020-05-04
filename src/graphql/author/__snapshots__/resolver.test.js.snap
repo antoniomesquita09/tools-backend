@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Author resolver Should mutate a new author 1`] = `
+Object {
+  "createAuthor": Object {
+    "email": "email@test.com",
+    "github": "teste.github",
+    "name": "test",
+  },
+}
+`;
+
+exports[`Testing Author resolver Should query a list of authors 1`] = `
+Object {
+  "getAuthors": Array [
+    Object {
+      "email": "email@test.com",
+      "github": "teste.github",
+      "name": "test",
+    },
+  ],
+}
+`;

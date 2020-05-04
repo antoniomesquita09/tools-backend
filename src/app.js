@@ -2,12 +2,10 @@ require('dotenv').config();
 const { ApolloServer } = require('apollo-server');
 const mongoose = require('mongoose');
 
-const typeDefs = require('./graphql/type');
-const resolvers = require('./graphql/resolver');
+const schema = require('./graphql/schema');
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers,
+  schema,
   playground: process.env.NODE_ENV === 'development',
 });
 

@@ -1,8 +1,8 @@
-const { gql } = require('apollo-server-lambda');
+const { gql } = require('apollo-server');
 
 module.exports = gql`
   type Repository {
-    id: String!
+    id: ID!
     name: String!
     author: Author!
     description: String

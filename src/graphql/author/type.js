@@ -1,8 +1,8 @@
-const { gql } = require('apollo-server-lambda');
+const { gql } = require('apollo-server');
 
 module.exports = gql`
   type Author {
-    id: String!
+    id: ID!
     name: String!
     email: String!
     github: String
@@ -14,5 +14,7 @@ module.exports = gql`
 
   extend type Mutation {
       createAuthor(name: String!, email: String!, github: String): Author
+      updateAuthor(id: ID!, name: String, email: String, github: String): Author
+      deleteAuthor(id: ID!): Author
   }
 `;
